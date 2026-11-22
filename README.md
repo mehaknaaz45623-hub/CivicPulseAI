@@ -1,139 +1,143 @@
 CivicPulse AI 🏙️
 
-AI-Powered Smart City Complaint Management System
+An AI-powered civic complaint management platform designed to help citizens report public infrastructure issues and help administrators analyze, prioritize, and manage complaints.
 
-CivicPulse AI is an intelligent civic complaint management platform designed to help citizens report public issues and help administrators analyze, prioritize, and manage complaints efficiently.
+📸 Project Screenshots
 
-The platform combines complaint management, AI-powered classification, duplicate detection, priority analysis, analytics, and a futuristic 3D smart city visualization.
+Dashboard
+
+"CivicPulse AI Dashboard" (screenshots/dashboard.png)
+
+AI Insights
+
+"AI Insights" (screenshots/ai_insights.png)
+
+Live Complaint Map
+
+"Live Complaint Map" (screenshots/live_map.png)
+
+3D Smart City
+
+"3D Smart City" (screenshots/smart_city_3d.png)
+
+Complaint Management
+
+"All Complaints" (screenshots/all_complaints.png)
+
+AI Complaint Analysis
+
+"AI Analysis" (screenshots/ai_analysis.png)
 
 ✨ Features
 
-👤 Citizen Portal
-
-- Citizen registration and secure login
-- Submit civic complaints
-- AI-powered complaint classification
+- Citizen registration and login
+- Administrator authentication and role-based access
+- Civic complaint submission and management
+- AI-assisted complaint classification
 - Severity and priority assessment
-- Duplicate complaint detection
-- Track complaint status
-- View personal complaints
-
-🛡️ Admin Portal
-
-- Admin authentication
-- View and manage all complaints
-- Update complaint statuses
-- Monitor complaint statistics
-- Analyze complaint categories and severity
-- View AI-generated analytical insights
-- Explore historical complaint trends
-
-🤖 AI Capabilities
-
-- Automatic complaint category classification
-- Severity assessment
-- Priority scoring
 - Duplicate complaint detection using TF-IDF and cosine similarity
 - Image analysis using CLIP
-- AI-powered civic insights and recommendations
-
-📊 Visualization
-
-- Interactive analytics dashboard
-- Complaint statistics and charts
-- Historical trends
-- Live complaint map
+- Interactive complaint map
 - 3D Smart City visualization
+- Admin analytics dashboard
+- AI-generated analytical insights using rule-based logic
+- Historical complaint trends
+- Complaint status tracking
+- SQLite database
 
 🛠️ Tech Stack
 
-Technology| Purpose
-Python| Core programming language
-Streamlit| Frontend
-FastAPI| Backend REST API
-SQLite| Database
-Scikit-learn| NLP and duplicate detection
-Transformers| AI image analysis
-CLIP| Image understanding
-Plotly| Data visualization
-JWT| Authentication
+Frontend
 
-📁 Project Structure
+- Python
+- Streamlit
+- HTML
+- Interactive visualizations
+
+Backend
+
+- FastAPI
+- REST API
+- JWT authentication
+
+Database
+
+- SQLite
+
+AI / Machine Learning
+
+- Scikit-learn
+- TF-IDF
+- Cosine Similarity
+- CLIP
+- Transformers
+- PyTorch
+
+📂 Project Structure
 
 CivicPulseAI/
+│
 ├── backend/
 │   ├── main.py
 │   ├── database.py
-│   ├── ai_classifier.py
+│   ├── database_backup.py
 │   ├── duplicate_detector.py
 │   ├── image_analyzer.py
-│   ├── analytics.py
-│   ├── ai_insights.py
 │   └── requirements.txt
 │
 ├── frontend/
 │   ├── app.py
-│   └── [frontend assets]
+│   ├── city_preview.py
+│   └── smart_city.html
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── ai_insights.png
+│   ├── live_map.png
+│   ├── smart_city_3d.png
+│   ├── all_complaints.png
+│   └── ai_analysis.png
 │
 ├── .gitignore
 └── README.md
 
-🚀 Getting Started
+🚀 Running the Project
 
 1. Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/CivicPulseAI.git
+git clone https://github.com/mehaknaaz45623-hub/CivicPulseAI.git
 cd CivicPulseAI
 
-2. Setup the Backend
+2. Install backend dependencies
 
 cd backend
 pip install -r requirements.txt
 
-Start the backend:
+3. Start the backend
 
 uvicorn main:app --reload
 
-Backend API:
+The backend API will run locally. Interactive API documentation is available at:
 
-http://127.0.0.1:8000
+"http://127.0.0.1:8000/docs"
 
-Interactive API documentation:
+4. Start the frontend
 
-http://127.0.0.1:8000/docs
+Open a second terminal:
 
-3. Setup the Frontend
-
-Open a second terminal and navigate to the frontend directory.
-
-Start Streamlit:
-
+cd frontend
 streamlit run app.py
-
-Frontend:
-
-http://localhost:8501
-
-🔍 How It Works
-
-1. Citizens register and log in.
-2. Citizens submit civic complaints.
-3. AI analyzes the complaint and identifies its category and severity.
-4. The system checks for similar existing complaints.
-5. Complaints are stored in the database.
-6. Administrators monitor complaints through the dashboard.
-7. Administrators update complaint statuses.
-8. Citizens track progress.
-9. Analytics and AI insights help identify recurring civic issues.
 
 🎯 Project Goal
 
-The goal of CivicPulse AI is to make civic issue reporting more organized, data-driven, and transparent by combining AI-assisted analysis with an accessible complaint management system.
+CivicPulse AI aims to improve civic issue reporting and management through technology, data analysis, visualizations, and AI-assisted tools.
 
 👩‍💻 Developer
 
-Developed as an AI-powered smart city project.
+Mehak Naaz
+
+GitHub: "mehaknaaz45623-hub" (https://github.com/mehaknaaz45623-hub)
 
 ---
 
-CivicPulse AI — Smarter Cities, Better Communities.
+Built as an AI-focused civic technology project.
