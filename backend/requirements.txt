@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+python-multipart
+pydantic[email]
+pwdlib[argon2]
+python-jose[cryptography]
+scikit-learn
+torch
+transformers
+Pillow
